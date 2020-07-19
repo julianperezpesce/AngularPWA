@@ -6,15 +6,17 @@ import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faGithub, faCodepen, faInstagram, faYoutube, faLinkedin, faMedium } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faCodepen, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
 
-library.add(faGithub, faCodepen, faInstagram, faYoutube, faLinkedin, faMedium);
+// library.add(faGithub, faCodepen, faLinkedin);
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavMenuComponent
   ],
   imports: [
     BrowserModule,
@@ -25,4 +27,10 @@ library.add(faGithub, faCodepen, faInstagram, faYoutube, faLinkedin, faMedium);
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule {
+  constructor(private library2: FaIconLibrary) {
+    library2.addIcons(faCodepen, faGithub, faLinkedin);
+  }
+}
+
+
