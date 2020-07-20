@@ -1,5 +1,5 @@
 section { min-height: 100vh; height: auto; position: relative; }
-
+a, li { text-decoration: none; }
 /* -- Home Section ---------------------------------- */
 #home {
   background-color: black;

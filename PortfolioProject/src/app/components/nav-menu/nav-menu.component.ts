@@ -12,4 +12,18 @@ export class NavMenuComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  sidebarOn() {
+    let nav = document.getElementById("desktop-nav");
+    let toggle = document.getElementById("sidebar-toggle");
+    nav.classList.remove("display-none");
+    toggle.classList.add("display-none");
+  }
+
+  sidebarOff() {
+    let nav = document.getElementById("desktop-nav");
+    let toggle = document.getElementById("sidebar-toggle");
+    nav.classList.add("display-none");
+    toggle.classList.remove("display-none");
+  }
+
 }
