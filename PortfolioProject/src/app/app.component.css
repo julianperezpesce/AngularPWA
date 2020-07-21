@@ -40,6 +40,15 @@ video {
   font-family: roboto, sans-serif;
   font-size: 5rem;
 }
+.main-subtitle {
+  position: relative;
+  align-items: center;
+  top: 2rem;
+  color: rgb(196, 192, 192);
+  font-family: roboto, sans-serif;
+  font-size: 2rem;
+  font-weight: lighter;
+}
 
 /* Social Icons */
 .social-icons {
@@ -116,7 +125,58 @@ video {
 }
 
 /* -- Projects Section ------------------------------ */
-#projects { background-color: orangered; }
+#projects { background-color: black; }
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 10%;
+}
+.projects-title {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.project-group-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.project-group-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 10vh;
+}
+.project-img img {
+  width: 325px;
+  transition: all 0.3s ease-in-out;
+}
+.project-img img:hover {
+  transform: scale(0.97);
+  transition: all 0.3s ease-in-out;
+}
+.project-item {
+  text-align: center;
+}
+.project-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 0 auto;
+}
+.project-title a:hover {
+  color: rgb(62, 62, 231);
+  transition: all 0.3s ease-in-out;
+}
+.github-link {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 1vh;
+}
+.github-link a:hover {
+  color: rgb(42, 80, 252);
+  transition: all 0.3s ease-in-out;
+}
 /* -- Contact Section ------------------------------- */
 #contact { background-color: purple; }
 /* -- Footer Section -------------------------------- */
