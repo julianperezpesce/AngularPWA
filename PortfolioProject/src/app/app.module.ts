@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from "@angular/router";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,15 +11,24 @@ import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontaweso
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faGithub, faCodepen, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
+import { ResumeComponent } from './components/resume/resume.component';
 
 // library.add(faGithub, faCodepen, faLinkedin);
+const appRoutes: Routes = [
+  {path: 'resume', component: ResumeComponent}
+]
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavMenuComponent
+    NavMenuComponent,
+    ResumeComponent
   ],
   imports: [
+    RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: true }
+    ),
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
