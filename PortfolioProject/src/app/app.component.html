@@ -1,5 +1,6 @@
 <div class="wrapper">
   <app-nav-menu></app-nav-menu>
+  <router-outlet></router-outlet>
   <!-- Home Section ---------------------------------->
   <section id="home">
 
@@ -30,7 +31,7 @@
         <div class="card-body">
           <h1 class="card-title">About</h1>
           <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit odio in quidem earum adipisci! Eveniet quis quam repellat qui consequuntur iure praesentium quidem corporis quia aperiam pariatur ea, nisi eius?</p>
-          <a href="">
+          <a [routerLink]="['/resume']" routerLinkActive="active" >
             <div class="card-button">View Resume</div>
           </a>
         </div>
