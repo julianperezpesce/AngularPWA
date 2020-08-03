@@ -12,6 +12,7 @@
 
     <!-- Main Title -->
     <h1 class="main-title">Julián Pérez Pesce</h1>
+    
     <div class="main-subtitle">
       <p>Programador Full Stack</p>
     </div>
@@ -31,7 +32,7 @@
         <div class="card-body">
           <h1 class="card-title">About</h1>
           <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit odio in quidem earum adipisci! Eveniet quis quam repellat qui consequuntur iure praesentium quidem corporis quia aperiam pariatur ea, nisi eius?</p>
-          <a [routerLink]="['/resume']" routerLinkActive="active" >
+          <a [routerLink]="['/resume']" routerLinkActive="active" (click)="scrollToTop()">
             <div class="card-button">View Resume</div>
           </a>
         </div>
@@ -128,22 +129,24 @@
     </div>
   </section>
   <!-- Contact Section ------------------------------------>
-  <div class="background-bussines-card">
-    <section id="contact">
-      <!-- Mail to link -->
-      <!-- <a href="mailto:estrotococoa@gmail.com" class="contact-mail" target="_blank" rel="noopener">
-        contact<span class="mail-color">@</span>mail.com
-      </a> -->
   
-      <!-- Bussines Card Mockup -->
-      <a href="mailto:estrotococoa@gmail.com" target="_blank" rel="noopener" title="Click to send email">
-        <img src="../assets/img/julian - bussines-card.png" alt="julian perez pesce bussines card" class="bussines-card">
+  <div class="background">
+    <section id="contact">
+      
+      <!-- Mail to link -->
+      <a href="mailto:estrotococoa@gmail.com" class="contact-mail" target="_blank" rel="noopener">
+        Contact <span class="mail-color">me</span>
       </a>
 
       <!-- Video Background -->
-      <!-- <video loop muted autoplay id="video-background-2">
-        <source src="https://pixabay.com/es/videos/download/video-35344_source.mp4" type="video/mp4">
-      </video> -->
+      <video loop muted autoplay id="video-background-2">
+        <source src="../assets/img/video-background.mp4" type="video/mp4">
+      </video>
+      
+      <!-- Bussines Card Mockup -->
+      <!-- <a href="mailto:estrotococoa@gmail.com" target="_blank" rel="noopener" title="Click to send email">
+        <img src="../assets/img/julian - bussines-card.png" alt="julian business card" class="business-card">
+      </a> -->
       
     </section>
   </div>
