@@ -249,8 +249,7 @@ video {
   .social-icons fa-icon { font-size: 2rem; }
   .card { width: auto; }
   .about-img { height: 260px; }
-  /* .projects-title { font-size: 2.5rem; padding-top: 50px; } */
-  .projects-title { font-size: 1.5rem; padding-top: 50px; }
+  .projects-title { font-size: 1.5rem; padding-top: 20px; }
   .card-text { font-size: 1.1rem; }
   .github-link { font-size: 1rem; }
   .contact-mail { font-size: 2.5rem; }

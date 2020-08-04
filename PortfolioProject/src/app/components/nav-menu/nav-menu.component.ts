@@ -26,4 +26,11 @@ export class NavMenuComponent implements OnInit {
     toggle.classList.remove("display-none");
   }
 
+  toggle() {
+    let mobileNav = document.getElementById("mobile-nav");
+    let menuBars = document.getElementById("menu-bars");
+    mobileNav.classList.toggle("nav-expand");
+    menuBars.classList.toggle("change");
+  }
+
 }
