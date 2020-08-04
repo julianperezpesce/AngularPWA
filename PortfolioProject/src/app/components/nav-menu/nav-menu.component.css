@@ -13,7 +13,7 @@ a, li { text-decoration: none; }
 }
 .sidebar-toggle {
     text-transform: uppercase;
-    font-size: 2rem; 
+    font-size: 3rem; 
     font-family: 'Segoe UI', sans-serif;
     color: white;
     background-color: rgba(0,0,0,.5);
@@ -43,4 +43,14 @@ a, li { text-decoration: none; }
     color: rgba(0,0,0,.85);
     background-color: #fbfbfb;
     transition: .3s;
+}
+
+
+/* ------------- Media Queries ------------- */
+
+/* ------------- Mobil Navigation ------------- */
+@media screen and (max-width: 600px) {
+    .sidebar-container { height: 100px; width: 150px; }
+    .sidebar-toggle { font-size: 2rem; margin: 20px; padding: 2px 14px 5px; width: 120px;}
+    .sidebar-items { font-size: 2rem; top: -12px; left: -20px }
 }

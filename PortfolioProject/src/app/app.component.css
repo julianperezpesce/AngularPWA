@@ -131,6 +131,7 @@ video {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-top: 150px;
   margin: 0 10%;
 }
 .projects-title {
@@ -248,7 +249,8 @@ video {
   .social-icons fa-icon { font-size: 2rem; }
   .card { width: auto; }
   .about-img { height: 260px; }
-  .project-title { font-size: 1.2rem; }
+  /* .projects-title { font-size: 2.5rem; padding-top: 50px; } */
+  .projects-title { font-size: 1.5rem; padding-top: 50px; }
   .card-text { font-size: 1.1rem; }
   .github-link { font-size: 1rem; }
   .contact-mail { font-size: 2.5rem; }
