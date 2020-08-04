@@ -249,10 +249,25 @@ video {
   .social-icons fa-icon { font-size: 2rem; }
   .card { width: auto; }
   .about-img { height: 260px; }
-  .projects-title { font-size: 1.5rem; padding-top: 20px; }
   .card-text { font-size: 1.1rem; }
+  .projects-title { font-size: 1.5rem; padding-top: 20px; }  
   .github-link { font-size: 1rem; }
-  .contact-mail { font-size: 2.5rem; }
+  .contact-mail { margin-top: 40vh; font-size: 3.5rem; }
+  .footer-icons fa-icon { margin-left: 15px; }
+  .footer-text { font-size: 1rem; }
+}
+
+/* Large Smartphone (Horizontal) */
+@media screen and (max-width: 850px) and (max-height: 500px) {
+  .main-title { top: 16%; }
+  .card { top: 0px; width: 80vw; }
+  .card-title { padding-bottom: 1px; }
+  .about-img { height: 180px; }  
+  .card-text { font-size: 1rem; }
+  .projects { padding-top: 40px; }
+  .project-img { width: 410px; }
+  .projects-title { font-size: 1.2rem; padding-top: 0px; }
+  .contact-mail { margin-top: 36vh;}
   .footer-icons fa-icon { margin-left: 15px; }
   .footer-text { font-size: 1rem; }
 }

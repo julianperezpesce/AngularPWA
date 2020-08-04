@@ -1,6 +1,6 @@
 a, li { text-decoration: none; }
-.desktop-nav {display: initial;}
-.display-none { display: none;}
+.desktop-nav { display: initial; }
+.display-none { display: none; }
 #menu-bars { display: none; }
 #mobile-nav { display: none; }
 
@@ -11,8 +11,8 @@ a, li { text-decoration: none; }
     height: 20vh; 
     width: 250px;
     z-index: 10;
-    /* background-color: dodgerblue; */
 }
+
 .sidebar-toggle {
     text-transform: uppercase;
     font-size: 3rem; 
@@ -47,11 +47,9 @@ a, li { text-decoration: none; }
     transition: .3s;
 }
 
-
 /* ------------- Media Queries ------------- */
-
 /* ------------- Mobile Navigation ------------- */
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 960px) {
     .sidebar-container, .sidebar-toggle, .desktop-nav { display: none; }
     #menu-bars { display: initial; }
     #mobile-nav { display: initial; }
@@ -87,10 +85,12 @@ a, li { text-decoration: none; }
     }
     
     .mobile-nav a { color: white; }
+    
     .mobile-nav a:hover {
         color: rgba(0,0,0,.85);
         background-color: #fbfbfb;
     }
+
     .nav-items li:hover {
         color: rgba(0,0,0,.85);
         background-color: #fbfbfb;
