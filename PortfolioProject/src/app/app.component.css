@@ -14,6 +14,16 @@ a { text-decoration: none; color: white;}
   bottom: 0px;
 }
 
+/* TS Particles */
+#tsparticles {
+  position: fixed;
+  object-fit: cover;
+  /* right: 0;
+  bottom: 0; */
+  width: auto;
+  height: auto;
+}
+
 /* Video Background */
 #video-background {
   position: fixed;

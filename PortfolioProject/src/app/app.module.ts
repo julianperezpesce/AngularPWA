@@ -12,6 +12,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faGithub, faCodepen, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
 import { ResumeComponent } from './components/resume/resume.component';
+import { NgParticlesModule } from 'ng-particles'; 
 
 library.add(faGithub, faCodepen, faLinkedin);
 const appRoutes: Routes = [
@@ -31,6 +32,7 @@ const appRoutes: Routes = [
     ),
     BrowserModule,
     AppRoutingModule,
+    NgParticlesModule,
     FontAwesomeModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
