@@ -2,19 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>PortfolioProject</title>
+  <title>Portfolio Project</title>
   <base href="/">
-  
+  <meta name="theme-color" content="#000000">
+  <meta name="Description" content="Portfolio Progressive Web App">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.ico">
-  <link rel="manifest" href="manifest.webmanifest">
-  <meta name="theme-color" content="#1976d2">
+  
+  
   <!-- Scrool between sections -->
   <style>*, ::after, ::before {box-sizing: border-box;}</style>
   <style>html, body {margin: 0; scroll-behavior: smooth;}</style>
+
+  <!-- Social Media Tags -->
+  <meta property="og:title" content="Portfolio Project">
+  <meta property="og:description" content="Portfolio Progressive Web App.">
+  <meta property="og:image" content="https://github.com/julianperezpesce/AngularPWA/blob/master/PortfolioProject/src/assets/img/social-media.jpg">
+  <meta property="og:url" content="https://julian-portfolio-project-5d6ff.web.app">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- PWA Compatibility -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <script async   src="https://cdn.jsdelivr.net/npm/pwacompat@2.0.6/pwacompat.min.js"
+    integrity="sha384-GOaSLecPIMCJksN83HLuYf9FToOiQ2Df0+0ntv7ey8zjUHESXhthwvq9hXAZTifA"
+    crossorigin="anonymous"></script>
+    
+  <!-- Particles JS -->
+  <!-- <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="../assets/js/particles.js"></script> -->
 </head>
 <body>
   <app-root></app-root>
-  <noscript>Please enable JavaScript to continue using this application.</noscript>
+  <!-- <noscript>Please enable JavaScript to continue using this application.</noscript> -->
 </body>
 </html>

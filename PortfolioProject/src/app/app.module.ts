@@ -13,7 +13,7 @@ import { faGithub, faCodepen, faLinkedin } from '@fortawesome/free-brands-svg-ic
 import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
 import { ResumeComponent } from './components/resume/resume.component';
 
-// library.add(faGithub, faCodepen, faLinkedin);
+library.add(faGithub, faCodepen, faLinkedin);
 const appRoutes: Routes = [
   {path: 'resume', component: ResumeComponent}
 ]
